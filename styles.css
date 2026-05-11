@@ -861,6 +861,11 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .project-grid {
+    grid-auto-rows: auto;
+    gap: 20px;
+  }
+
   .testimonial-row-right > img {
     order: -1;
   }
