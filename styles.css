@@ -1219,6 +1219,12 @@ body.has-modal {
 }
 
 @media (max-width: 720px) {
+  body {
+    background:
+      linear-gradient(rgba(255, 250, 250, 0.38), rgba(255, 250, 250, 0.38)),
+      url("assets/brand/paper-canvas-texture.jpg") center top / auto 115vh repeat-y scroll #FFFAFA;
+  }
+
   .modal-frame {
     width: calc(100vw - 16px);
     max-height: calc(100vh - 16px);
