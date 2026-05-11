@@ -107,7 +107,7 @@ h3 {
 }
 
 .brand-icon {
-  width: 13px;
+  width: auto;
   height: 24px;
   object-fit: contain;
 }
@@ -392,7 +392,7 @@ h1 {
 }
 
 .section-title img {
-  width: 20px;
+  width: auto;
   height: 38px;
   object-fit: contain;
 }
@@ -664,7 +664,7 @@ h1 {
 }
 
 .footer-mark {
-  width: 21px;
+  width: auto;
   height: 40px;
   object-fit: contain;
 }
