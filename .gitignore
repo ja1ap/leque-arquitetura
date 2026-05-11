@@ -5,6 +5,8 @@ _copy-new.ps1
 _convert-png.ps1
 _optimize-images.ps1
 _normalize-covers.ps1
+_check-orientation.ps1
+_fix-rotation.ps1
 
 # OS / editor noise
 .DS_Store
