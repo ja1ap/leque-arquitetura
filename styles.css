@@ -113,8 +113,8 @@ h3 {
 }
 
 .brand-wordmark {
-  width: 78px;
-  height: 23px;
+  width: auto;
+  height: 24px;
   object-fit: contain;
 }
 
