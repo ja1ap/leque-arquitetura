@@ -767,6 +767,10 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .testimonial-row-right > img {
+    order: -1;
+  }
+
   .hero-metrics {
     position: static;
     width: 100%;
