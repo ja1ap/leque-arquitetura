@@ -1,4 +1,49 @@
 (function () {
+  const navToggle = document.querySelector(".nav-toggle");
+  const navEl = document.getElementById("site-nav");
+  const navBackdrop = document.querySelector(".nav-backdrop");
+  if (!navToggle || !navEl) return;
+
+  function openMenu() {
+    navToggle.setAttribute("aria-expanded", "true");
+    navToggle.setAttribute("aria-label", "Fechar menu");
+    navEl.classList.add("is-open");
+    if (navBackdrop) {
+      navBackdrop.hidden = false;
+      requestAnimationFrame(() => navBackdrop.classList.add("is-open"));
+    }
+    document.body.classList.add("has-menu");
+  }
+
+  function closeMenu() {
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.setAttribute("aria-label", "Abrir menu");
+    navEl.classList.remove("is-open");
+    if (navBackdrop) {
+      navBackdrop.classList.remove("is-open");
+      window.setTimeout(() => { navBackdrop.hidden = true; }, 280);
+    }
+    document.body.classList.remove("has-menu");
+  }
+
+  navToggle.addEventListener("click", () => {
+    if (navEl.classList.contains("is-open")) closeMenu(); else openMenu();
+  });
+
+  if (navBackdrop) navBackdrop.addEventListener("click", closeMenu);
+
+  navEl.querySelectorAll("a").forEach((a) => {
+    a.addEventListener("click", () => {
+      if (navEl.classList.contains("is-open")) closeMenu();
+    });
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && navEl.classList.contains("is-open")) closeMenu();
+  });
+})();
+
+(function () {
   const PROJECT_IMAGE_COUNTS = {
     "apartamento-jml": 36,
     "apartamento-castro-alves": 34,
