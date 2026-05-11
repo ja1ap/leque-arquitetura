@@ -362,6 +362,7 @@ h1 {
   margin: 0 0 24px;
   border-radius: 96px 0 96px 0;
   object-fit: cover;
+  object-position: center top;
 }
 
 .bio-card h2 {
