@@ -180,7 +180,8 @@ h3 {
   position: relative;
   isolation: isolate;
   width: 100%;
-  min-height: min(666px, calc(100svh - 78px));
+  min-height: 100vh;
+  min-height: 100svh;
   display: grid;
   align-items: end;
   padding: clamp(104px, 13vh, 142px) max(24px, calc((100vw - var(--site)) / 2)) 42px;
