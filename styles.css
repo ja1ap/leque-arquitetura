@@ -483,7 +483,7 @@ h1 {
 
 .flowchart {
   display: block;
-  width: min(100%, 880px);
+  width: min(100%, 970px);
   height: auto;
   margin: 0 auto;
 }
