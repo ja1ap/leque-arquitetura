@@ -44,25 +44,7 @@
 })();
 
 (function () {
-  const PROJECT_IMAGE_COUNTS = {
-    "apartamento-jml": 36,
-    "apartamento-castro-alves": 34,
-    "apartamento-sarutaia": 12,
-    "apartamento-ac": 31,
-    "project-title-5": 22,
-    "project-title-6": 6,
-    "project-title-3": 15,
-    "project-title-2": 20,
-    "project-title-1": 19,
-    "casa-rl": 16,
-    "project-title-4": 16,
-    "apartamento-dm": 18,
-    "reforma-de-interiores-comercial": 6,
-    "apartamento-sc": 32,
-  };
-
-  function buildGallery(slug) {
-    const count = PROJECT_IMAGE_COUNTS[slug] || 0;
+  function buildGallery(slug, count) {
     const list = [];
     for (let i = 1; i <= count; i++) {
       const n = String(i).padStart(2, "0");
@@ -121,7 +103,7 @@
   function openModal(slug) {
     const project = findProject(slug);
     if (!project) return;
-    currentGallery = buildGallery(slug);
+    currentGallery = buildGallery(slug, project.imageCount || 0);
     if (!currentGallery.length) return;
 
     titleEl.textContent = formatTitle(project.title);
