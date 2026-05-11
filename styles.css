@@ -413,13 +413,13 @@ h1 {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: calc(50vh - 8px);
   grid-auto-flow: dense;
   gap: 16px;
 }
 
 .project-card {
   position: relative;
-  min-height: 330px;
   overflow: hidden;
   cursor: pointer;
   border-radius: 8px;
@@ -429,7 +429,6 @@ h1 {
 .project-featured {
   grid-column: span 2;
   grid-row: span 2;
-  min-height: 676px;
 }
 
 .project-card img {
