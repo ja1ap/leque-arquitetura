@@ -542,6 +542,22 @@ h1 {
   object-fit: cover;
 }
 
+.testimonial-author {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial-author figcaption {
+  font-family: "Arlon Medium", "Trebuchet MS", Arial, sans-serif;
+  font-size: 15px;
+  color: var(--ink);
+  text-align: center;
+  white-space: nowrap;
+}
+
 .testimonial-row p {
   font-size: clamp(16px, 1.7vw, 20px);
   line-height: 1.58;
@@ -867,7 +883,7 @@ h1 {
     gap: 20px;
   }
 
-  .testimonial-row-right > img {
+  .testimonial-row-right > .testimonial-author {
     order: -1;
   }
 
