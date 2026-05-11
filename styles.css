@@ -36,7 +36,7 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
-  background: url("assets/brand/white-abstract-texture-background.jpg") center / cover no-repeat fixed #FFFAFA;
+  background: #FFFAFA url("assets/brand/white-abstract-texture-background.jpg") center top / 100% auto repeat-y;
   color: var(--ink);
   font-family: "Arlon Light", "Trebuchet MS", Arial, sans-serif;
   letter-spacing: 0.01em;
