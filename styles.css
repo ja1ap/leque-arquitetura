@@ -38,7 +38,7 @@ body {
   overflow-x: hidden;
   background:
     linear-gradient(rgba(255, 250, 250, 0.55), rgba(255, 250, 250, 0.55)),
-    url("assets/brand/paper-texture.jpg") center / cover no-repeat fixed #FFFAFA;
+    url("assets/brand/paper-texture.avif") center / cover no-repeat fixed #FFFAFA;
   color: var(--ink);
   font-family: "Arlon Light", "Trebuchet MS", Arial, sans-serif;
   letter-spacing: 0.01em;
