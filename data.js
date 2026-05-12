@@ -147,7 +147,10 @@ window.LEQUE_PROJECTS = [
     "slug": "apartamento-ac",
     "imageCount": 31,
     "details": [
-      { "label": "Tipo de projeto", "text": "Reforma de interiores" }
+      { "label": "Tipo de projeto", "text": "Reforma de interiores" },
+      { "label": "Data", "text": "2024" },
+      { "label": "Localização", "text": "Vila Mariana - São Paulo" },
+      { "label": "Área", "text": "85m²" }
     ]
   }
 ];
