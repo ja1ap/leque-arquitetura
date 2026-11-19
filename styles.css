@@ -469,11 +469,23 @@ h1 {
 }
 
 .project-card figcaption span {
-  color: var(--coral);
-  font-family: "Arlon Light", "Trebuchet MS", Arial, sans-serif;
+  color: var(--navy-deep);
+  font-family: "Arlon Medium", "Trebuchet MS", Arial, sans-serif;
   font-size: 11px;
   letter-spacing: 0.16em;
+  text-shadow: 0 0 2px var(--blush), 0 0 5px var(--blush);
   text-transform: uppercase;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .project-card figcaption span {
+    opacity: 0;
+  }
+
+  .project-card:hover figcaption span,
+  .project-card:focus-visible figcaption span {
+    opacity: 1;
+  }
 }
 
 .project-card:hover img {
