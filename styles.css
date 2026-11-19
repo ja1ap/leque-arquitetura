@@ -495,29 +495,6 @@ h1 {
   margin: 0 auto;
 }
 
-.courses {
-  padding: clamp(28px, 4vw, 44px) 24px clamp(82px, 9vw, 118px);
-  background: var(--navy-deep);
-  color: var(--blush);
-  text-align: center;
-}
-
-.section-title-light {
-  width: min(var(--site), calc(100% - 48px));
-  margin: 0 auto clamp(66px, 8vw, 96px);
-  justify-content: flex-start;
-  text-align: left;
-}
-
-.courses p {
-  color: var(--blush);
-  font-family: "Arlon Light", "Trebuchet MS", Arial, sans-serif;
-  font-size: clamp(18px, 2.2vw, 24px);
-  line-height: 1;
-  letter-spacing: 0.18em;
-  text-align: center;
-}
-
 .testimonials {
   padding: clamp(28px, 4vw, 44px) 0 var(--section);
 }
@@ -929,11 +906,6 @@ h1 {
   .section-copy {
     margin-left: 0;
     white-space: normal;
-  }
-
-  .section-title-light {
-    width: calc(100% - 32px);
-    margin-bottom: 82px;
   }
 
   .testimonial-row {
