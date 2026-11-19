@@ -249,10 +249,11 @@ h1 {
 }
 
 .intro-copy p:not(.eyebrow):not(.hero-statement) {
-  width: min(560px, 100%);
+  width: min(700px, 100%);
   color: rgba(241, 226, 220, 0.78);
   font-size: 15px;
   line-height: 1.55;
+  text-align: justify;
 }
 
 .intro-actions {
